@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aero Mars Transit | aeromarstransit.mars</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="domain-bar">🔒 aeromarstransit.mars</div>
+
+  <header class="navbar">
+    <div class="logo">AERO <span>MARS</span><small>TRANSIT</small></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#routes">Routes</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#safety">Safety</a>
+      <a href="#contact" class="nav-btn">Book Ride</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="tagline">Mars Colony Public Transportation</p>
+      <h1>The Future of Mobility on Mars</h1>
+      <p class="hero-copy">
+        Aero Mars Transit connects habitats, research labs, stations, and outposts with fast,
+        safe, and reliable aerial transit built for Martian conditions.
+      </p>
+      <div class="buttons">
+        <a href="#pricing" class="btn primary">Book a Ride</a>
+        <a href="#routes" class="btn secondary">Explore Routes</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section split">
+    <div>
+      <h2>About Aero Mars Transit</h2>
+      <p>
+        Aero Mars Transit is a futuristic public mobility system designed to reduce personal
+        rover use, save energy, and support daily commutes for colonists, researchers,
+        engineers, and operating staff.
+      </p>
+    </div>
+    <img src="assets/aero-mars-vehicle.png" alt="Realistic Aero Mars Transit vehicle on Mars" class="feature-img" />
+  </section>
+
+  <section id="routes" class="section route-section">
+    <h2>Route Network</h2>
+    <p>Our main route connects the key colony points across the Mars settlement.</p>
+
+    <div class="route-map" aria-label="Aero Mars Transit route map">
+      <svg viewBox="0 0 1000 420" role="img">
+        <path class="route route-red" d="M90 250 C230 250, 250 110, 390 115 S570 155, 680 170 S800 260, 910 245" />
+        <path class="route route-white" d="M390 115 C430 210, 430 285, 500 315 S670 355, 780 350" />
+
+        <g class="station" transform="translate(90 250)"><circle/><text x="-70" y="-22">Olympus City</text></g>
+        <g class="station" transform="translate(390 115)"><circle/><text x="-42" y="-28">Vallis Hub</text></g>
+        <g class="station" transform="translate(680 170)"><circle/><text x="-45" y="-28">Ares Station</text></g>
+        <g class="station" transform="translate(500 315)"><circle/><text x="-78" y="42">Horizon Outpost</text></g>
+        <g class="station" transform="translate(780 350)"><circle/><text x="-10" y="42">Elysium Terminal</text></g>
+        <g class="station" transform="translate(910 245)"><circle/><text x="-80" y="-28">Medical Hub</text></g>
+      </svg>
+    </div>
+  </section>
+
+  <section id="pricing" class="section pricing">
+    <h2>Simple Pricing</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <span class="icon">👤</span>
+        <h3>Single Ride</h3>
+        <p class="price">MRD 10</p>
+        <p>One-way ride to any destination on the Aero Mars Transit network.</p>
+      </div>
+      <div class="price-card highlighted">
+        <span class="icon">📅</span>
+        <h3>Monthly Pass</h3>
+        <p class="price">MRD 55,000</p>
+        <p>Unlimited rides across all routes for 30 days.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="safety" class="section cards-section">
+    <h2>Why Choose Us</h2>
+    <div class="cards">
+      <div class="card"><h3>Fast</h3><p>Travel across Mars colony zones in minutes.</p></div>
+      <div class="card"><h3>Safe</h3><p>AI-assisted navigation and collision avoidance.</p></div>
+      <div class="card"><h3>Sustainable</h3><p>Clean energy support for a better Martian future.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Book or Contact</h2>
+    <p>Ready to move across the colony?</p>
+    <form>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="button" onclick="showMessage()">Send Message</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Aero Mars Transit · aeromarstransit.mars</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
